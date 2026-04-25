@@ -20,8 +20,8 @@ import "./App.css";
 
 const WHATSAPP = "5493854687019";
 const INSTAGRAM = "https://www.instagram.com/impresiones.avas";
-const FACEBOOK = "https://www.facebook.com/";
-const TIKTOK = "https://www.tiktok.com/";
+const FACEBOOK = "https://www.facebook.com/share/1ArGR6uFVE/";
+const TIKTOK = "https://www.tiktok.com/@impresiones.avas?_r=1&_t=ZS-95q7SsDs3TM";
 
 function whatsapp(text) {
   return `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(text)}`;
@@ -376,6 +376,14 @@ function App() {
 
           <a href={TIKTOK} target="_blank" rel="noreferrer">
             <span className="red-icon">TT</span> TikTok
+          </a>
+
+          <a
+            href={whatsapp("Hola, quiero hacer una consulta a Impresiones AVAS.")}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="red-icon">WA</span> WhatsApp
           </a>
 
           <div>
